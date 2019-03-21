@@ -1,0 +1,37 @@
+@CHARSET "ISO-8859-1";
+
+body{
+			margin:20px;
+			font-family: 'Lato';
+			font-weight: 400;
+			overflow:hidden;
+			background:url(../image/background_pic.jpg) no-repeat center center fixed;
+			background-size:cover;	
+		}		
+		label {
+		  color: black;
+		  font-weight: bold;
+		  margin-right:10px;
+		  display:block;
+		}
+		
+		input {
+		  border: 2px solid black;
+		  width: 300px;
+		  outline: none;
+		  padding: 4px;
+		  border-radius: 5px;
+		  margin: 5px 0 10px 0;
+		}
+		
+		#addServicesForm
+		{
+			margin-top: 70px;
+			border: 2px solid black;
+			text-align:center;
+			font-style:italic;
+			width: 750px;
+			background-color: #1E90FF;
+			
+			
+		}

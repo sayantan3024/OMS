@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+*{
+	font-family: 'Raleway', sans-serif;
+}
+body{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	background:url(../image/background_pic.jpg) no-repeat center center fixed;
+	background-size:cover;	
+}
+input[type=text],input[type=password],input[type=email]{
+	border-radius:0;
+}
+.btn {
+	border-radius:0;
+}
+.wrapper{
+	width:100%;
+	height:100%;
+	
+}
+.wrapper .left-side-panel{
+	width:100px;
+	position:absolute;
+	height:100%;
+	background:#3b444e;
+	border-left:4px solid #48CFAD;
+}
+.wrapper .right-side-content{
+	width:100%;
+	position:absolute;
+	height:100%;
+	z-index:-1;
+	background:rgba(0,0,0,0.5);
+}
+.wrapper .right-side-content .layout{
+	postion:absolute;
+	width:100%;
+	height:100%;
+	
+}
+.nav{
+	margin:0;
+	padding:0;
+	padding-top:50px;
+
+}
+.nav li{
+	list-style:none;
+	text-align:center;
+	padding:10px 0px;
+	box-sizing:border-box;
+	color:#bcbcbc;
+}
+.nav li a,.nav li a:hover,.nav li a:focus,.nav li a:active{
+	display:block;
+	text-decoration:none;
+	background:none;
+	color:#bcbcbc;
+}
+.nav li.active{
+	background:#48CFAD;
+	color:#fff;
+}
+.nav li.active a{
+	color:#fff;
+	font-weight:bold;
+}
+.active:after{
+    content:"";
+    position:absolute;
+    height:0;
+    width:0;
+    left:100%;
+    top:20px;
+    border:10px dotted transparent;
+    border-left: 10px dotted #48CFAD;
+}
+.icn{
+	display:block;
+	font-size:2.7em;
+	text-align:center;
+}
+
+
+.login{
+	background:rgba(255,255,255,0.9);
+	width:350px;
+	height:370px;
+	margin:150px auto;
+	padding:50px 35px;
+}
+.login h4{
+	margin-bottom:15px;
+}
+.login .btn{
+	width:280px;
+}
+
+#content{
+	text-align:center;
+	margin-left:100px;
+	padding:30px;
+}
+/*  Home jsp page */
+
+.block-view{
+	background:rgba(255,255,255,0.9);
+	width:250px;
+	height:150px;
+	border-radius:1px;
+	margin:50px;
+	text-align:center;
+	padding:0;
+	
+}
+.bck-icn{
+	margin-top:20px;
+	font-size:4.2em;
+}
+.block-view h4{
+	postion:absolute;
+	bottom:0;
+	
+	border:1px solid #ddd;
+	background:#dedede;
+	height:30px;
+	line-height:1.5em;
+}
+
+/* view LSP */
+
+#viewLsp{
+	background:#fff;
+	text-align:left;
+	width:600px;
+	padding:50px 40px;
+	margin:0px auto;
+}
+#viewLsp .form-inline label{
+	width:150px;
+}
+#viewLsp .form-inline{
+	margin-top:7px;	
+}
+#viewLsp .form-inline .form-control{
+	width:250px;
+}
+/* register.jsp */
+.registerLSP .form-inline{
+	margin-top:15px;
+}
+.registerLSP .form-inline label{
+	width:180px;
+}
+
+
+/* change password page */
+
+#ChangePwd{
+	text-align:left;
+	width:400px;
+	margin:0px auto;
+	background:rgba(255,255,255,0.9);
+	padding:70px 40px;
+}
+#changeBtn{
+	width:320px;
+}
+
+/* Add service page */
+#SevicesAdd,#updateService{
+	width:500px;
+	margin:0px auto;
+	padding:40px 50px;
+	box-sizing:border-box;
+	background:rgba(255,255,255,0.9);
+	
+}
+#SevicesAdd .form-inline,#updateService .form-inline{
+	margin-bottom:10px;
+}
+#SevicesAdd .form-inline label,#updateService .form-inline label{
+	width:150px;
+	text-align:left;
+}
+.lab-home{
+	margin-left:-100px;
+	width:150px;
+	text-align:left;
+}
+
+/* view services */
+#ViewServices{
+	background:rgba(255,255,255,0.9);
+	border:4px solid #ddd;
+	margin-top:30px;
+	height:550px;
+}
+#ViewServices #searchContent{
+	width:250px;
+}
+#ViewServices #testTable{
+	margin:20px auto;
+	width:90%;
+	max-height:400px;
+	background:#fff;
+}
+.searchBox{
+	margin:40px 20px;
+	text-align:right;
+	padding-right:40px;
+}
+#ViewServices #testTable th{
+	text-align:center;
+}
+#ViewServices .addServiceIcn{
+	width:70px;
+	height:70px;
+	display:block;
+	border-radius:50%;
+	background:#fff3b7;
+	font-size:3em;
+	color:#777;
+	text-decoration:none;
+	padding-top:15px;
+	position:absolute;
+	bottom:100px;
+	right:100px;
+	border:2px solid #999;
+}
+/* - create schedule---*/
+#CreateSchedule{
+	margin:80px auto;
+	background:rgba(255,255,255,0.9);
+	padding:50px 20px;
+	border-box:box-sizing;
+	text-align:left;
+	width:400px;
+}
+#CreateSchedule .form-inline{
+	margin-bottom:15px;
+}
+#CreateSchedule .form-inline .form-control{
+	width:200px;
+}
+#CreateSchedule label{
+	width:150px;
+}
+#scheData{
+	border-box:box-sizing;	
+	max-height:500px;
+    overflow-y:auto;
+}
+#scheData table{
+	padding:20px;
+	background:rgba(255,255,255,0.9);
+	
+}
+/* reset password */
+#resetPass{
+	background:rgba(255,255,255,0.9);
+	width:800px;
+	margin:50px auto;
+	padding:50px 30px;
+	text-align:left;
+}
+#resetPass .qs{
+	height:80px;
+}
+
+/* home.jsp page */
+
+#menu{
+	margin-top:40px;
+}
+#menu .optionMenu{
+	list-style:none;
+	margin-top:25px;
+}
+#menu .optionMenu li{
+	display:inline-block;
+	margin:10px 30px;
+}
+#menu .optionMenu li a{
+	display:block;
+	width:200px;
+	height:200px;
+	border-radius:50%;
+	background:#fff;
+	text-decoration:none;
+	padding-top:20px;
+	font-size:16px;
+	color:#777;
+	transition:background-color 0.5s ease,color 0.5s linear;
+}
+#menu .optionMenu li a:hover{
+	background:#4fc1e9;
+	color:#fff;
+}
+#menu .optionMenu li a span{
+	margin-top:20px;
+	display:block;
+	font-size:4.3em;
+	margin-bottom:15px;
+}
+/* register page */
+#registerLSP{
+	background:rgba(255,255,255,0.8);
+	padding:40px 25px;
+	box-sizing:border-box;
+	overflow-y:auto;
+	max-height:560px;
+}
+#registerLSP .panel{
+	box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+}
+#registerLSP .form-inline{
+	text-align:left;
+	margin-bottom:5px;
+}
+#registerLSP .form-inline label{
+	width:150px;
+	color:#777;
+}
+#registerLSP .form-inline .form-control{
+	width:250px;
+}
+#q1,#q2,#q3{
+	margin-bottom:10px;
+}
+.registerBtn{
+	margin-top:20px;
+}
+.displayPass{
+	width:300px;
+	margin:150px auto;
+	padding:40px 25px;
+	background:#fff;
+	box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+}
+.displayPass span{
+	display:block;
+	margin-bottom:15px;
+	font-weight:bold;
+}
+
+
+
+
+.slotTable{
+	background:rgba(255,255,255,0.8);
+	padding:50px 40px;
+	max-height:600px;
+	overflow-y:auto;
+}
+.slotTable table{
+	background:#fff;
+}
